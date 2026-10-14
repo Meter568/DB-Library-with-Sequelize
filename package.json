@@ -1,13 +1,28 @@
 {
-  "name": "library-db-with-sequelize",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+    "name": "library-db-with-sequelize",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon ./index.js",
+        "dbcreate": "npx sequelize-cli db:create",
+        "dbdrop": "npx sequelize-cli db:drop",
+        "migall": "npx sequelize-cli db:migrate",
+        "migun": "npx sequelize-cli db:migrate:undo:all"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "dependencies": {
+        "dotenv": "^18.0.8",
+        "pg": "^8.23.1",
+        "pg-hstore": "^2.3.4",
+        "sequelize": "^6.37.8"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.14",
+        "sequelize-cli": "^6.6.5"
+    }
 }
