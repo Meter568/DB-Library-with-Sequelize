@@ -9,3 +9,25 @@ const dbCheck = async () => {
     }
 };
 
+// dbCheck();
+
+const dropCountriesTable = async () => {
+    try {
+        await db.country.drop();
+        console.log(`Table ${db.country.name} has been droped`);
+    } catch (error) {
+        console.log(`Cannot drop table: ${error.message}`);
+    }
+};
+
+// dropCountriesTable();
+
+const syncCountryTable = async () => {
+    try {
+        await db.country.sync();
+    } catch (error) {
+        console.log(`Cannot sync table: ${error.message}`);
+    }
+};
+
+// syncCountryTable();
