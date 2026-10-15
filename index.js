@@ -9,7 +9,7 @@ const dbCheck = async () => {
     }
 };
 
-// dbCheck();
+dbCheck();
 
 const dropCountriesTable = async () => {
     try {

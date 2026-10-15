@@ -6,10 +6,12 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "nodemon ./index.js",
-        "dbcreate": "npx sequelize-cli db:create",
-        "dbdrop": "npx sequelize-cli db:drop",
-        "migall": "npx sequelize-cli db:migrate",
-        "migun": "npx sequelize-cli db:migrate:undo:all"
+        "dbcreate": "npx sequelize db:create",
+        "dbdrop": "npx sequelize db:drop",
+        "migall": "npx sequelize db:migrate",
+        "migun": "npx sequelize db:migrate:undo:all",
+        "seedall": "npx sequelize db:seed:all",
+        "seedundo": "npx sequelize db:seed:undo:all"
     },
     "keywords": [],
     "author": "",
